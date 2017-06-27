@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import UserPicture from './UserPicture';
 
 class UserItem extends Component {
 
@@ -6,6 +7,7 @@ class UserItem extends Component {
     const user = this.props.user;
     return (
       <div style={styles.user_item}>
+        <UserPicture url={user.picture.medium} />
         <h2>{user.name.first} {user.name.last}</h2>
         <div>
           <a href="#">{user.email}</a>
