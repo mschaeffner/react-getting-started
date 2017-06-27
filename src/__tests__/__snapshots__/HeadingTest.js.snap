@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading should show the total number of friends 1`] = `
+<h1>
+  Friend list (
+  75
+  )
+</h1>
+`;
