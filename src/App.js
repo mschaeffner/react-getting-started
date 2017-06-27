@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Heading from './Heading';
+import UserItem from './UserItem';
 
 class App extends Component {
 
@@ -18,9 +19,7 @@ class App extends Component {
     return (
       <div>
         <Heading/>
-        {this.state.users.map(user =>
-          <div>{user.name.first + ' ' + user.name.last + ' ' + user.email}</div>
-        )}
+        {this.state.users.map(u => <UserItem user={u} /> )}
       </div>
     );
   }
