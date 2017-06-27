@@ -30,7 +30,7 @@ class App extends Component {
 
     return (
       <div>
-        <Heading/>
+        <Heading count={filteredUsers.length}/>
         <Searchbar value={this.state.keyword} onValueChanged={keyword => this.setState({keyword})} />
         {filteredUsers.map(u => <UserItem user={u} /> )}
       </div>

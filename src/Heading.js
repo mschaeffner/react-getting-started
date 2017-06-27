@@ -4,7 +4,7 @@ class Heading extends Component {
 
   render() {
     return (
-      <h1>Heading</h1>
+      <h1>Friend list ({this.props.count})</h1>
     );
   }
 
