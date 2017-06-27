@@ -5,7 +5,7 @@ class UserItem extends Component {
   render() {
     const user = this.props.user;
     return (
-      <div>
+      <div style={styles.user_item}>
         <h2>{user.name.first} {user.name.last}</h2>
         <div>
           <a href="#">{user.email}</a>
@@ -17,3 +17,10 @@ class UserItem extends Component {
 }
 
 export default UserItem;
+
+
+const styles = {
+  user_item: {
+    height: '100px',
+  }
+}
