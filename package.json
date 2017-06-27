@@ -1,0 +1,15 @@
+{
+  "name": "react-getting-started",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.6",
+    "react-test-renderer": "^15.6.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test --env=jsdom"
+  }
+}
