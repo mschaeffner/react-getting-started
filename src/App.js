@@ -7,7 +7,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      users: []
+      users: null
     };
   }
 
@@ -18,6 +18,11 @@ class App extends Component {
   }
 
   render() {
+
+    if(this.state.users === null) {
+      return <h1>Loading ...</h1>
+    }
+
     return (
       <div>
         <Heading/>
