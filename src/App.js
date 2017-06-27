@@ -7,12 +7,14 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      users: [
-        { name: { first: 'Alice', last: 'A' }, email: 'alice@example.com' },
-        { name: { first: 'Bob', last: 'B' }, email: 'bob@example.com' },
-        { name: { first: 'Charlie', last: 'C' }, email: 'charlie@example.com' }
-      ]
+      users: []
     };
+  }
+
+  componentDidMount() {
+    fetch('https://randomuser.me/api/?seed=foobar&nat=nz&results=500')
+      .then(response => response.json())
+      .then(json => this.setState({ users: json.results }));
   }
 
   render() {
